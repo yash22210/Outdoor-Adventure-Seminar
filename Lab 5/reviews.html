@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <!-- Author:Yash Patel,00842226-->
+		<title>Review form</title>
+<link rel="stylesheet" href="reviews.css">
+<link rel="stylesheet" href="navbar.css">
+    </head>
+    <body>
+			<div class="caption">
+				<h1> Outdoor Adventure Trip Reviews </h1>
+				<h1> 2020/2021 </h2>
+			</div>
+			<div class="navbar">
+					<a href="#" class="btn">About us</a>
+					<a href="Seminar.html" class="btn">Seminar</a>
+					<a href="#" class="btn">Travel</a>
+					<a href="#" class="btn">Photoss</a>
+					<a href="#" class="btn">shop</a>
+					<a href="#" class="btn">Reviews</a>
+					<a href="#" class="btn">Events</a>
+			</div>
+			<div class="fbor">
+				<form method = "post" action = "https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+
+					<input type ="hidden"  name = "formname" value = "Sharon Scollard Trip Review">
+			<fieldset>
+				<legend> Trip Reviews </legend>
+				<select id = "Location" name = "Trip">
+					<option value = "01">Alberta Rural</option>
+					<option value = "02">B.C. Coast</option>
+					<option value = "03" >Ontario Lake Superior</option>
+					<option value = "04" selected = "selected">PEI</option>
+ 					<option value = "05">Nova Scotia Cabot Trail</option>
+				</select>
+				<select id = "Days" name ="Duration">
+					<option   value = "5d" selected = "Selected"> 5 Days </option>
+						<option value = "7d"> 7 Days </option>
+						<option value = "10d"> 10 Days</option>
+						<option value = "14d"> 14 Days</option>
+					</select>
+					<div>
+						<p> Your Rating: </p>
+						<input type = "checkbox" id = "Rating" name = "Rating" value = "5 Star">
+						<label for = "Rating"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"></label>
+					</div>
+					<div>
+						<input type = "checkbox" id = "Rating" name = "Rating" value = "4 Star">
+						<label for = "Rating"> <img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"></label>
+					</div>
+					<div>
+						<input type = "checkbox" id = "Rating" name = "Rating" value = "3 Star">
+						<label for = "Rating"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"></label>
+					</div>
+					<div>
+						<input type = "checkbox" id = "Rating" name = "Rating" value = "2 Star">
+						<label for = "Rating"><img src="L5img\wheel_sm.jpg"><img src="L5img\wheel_sm.jpg"></label>
+					</div>
+					<div>
+						<input type = "checkbox" id = "Rating" name = "Rating" value = "1	 Star">
+						<label for = "Rating"><img src="L5img\wheel_sm.jpg"></label>
+					</div>
+					<p>Comments</p>
+					<textarea cols = "80" rows = "7" name = "feedback" placeholder = ""></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend> I would be interested in these trips: (Check all that apply)</legend>
+
+				<div>
+					<input type = "checkbox" id = "types" name = "interested" value = "Sea">
+					<label for = "sea">Sea or Lake Coast</label>
+				</div>
+
+				<div>
+					<input type = "checkbox" id = "cancerresearch" name = "interested" value = "Rural">
+					<label for = "Rural">Rural</label>
+				</div>
+
+				<div>
+					<input type = "checkbox" id = "hospital" name = "interested" value = "Mountains" checked = "checked">
+					<label for = "Mountains">Mountains</label>
+				</div>
+				<div>
+					<input type = "checkbox" id = "other" name = "interested" value = "other">
+					<label for = "Mountains">Other (Please specify)</label> <textarea cols = "5" rows = "1" name = "other types"> </textarea>
+				</div>
+			</fieldset>
+
+			<fieldset  class="labeelfloatleft">
+				<legend> About You (optical) </legend>
+				<div>
+				<label for = "contactme">I Usually prefer to trip this time of year (Select all that apply) : </label>
+				<select id = "contactme" name = "Pref" multiple size = "4">
+					<option>Winter</option>
+					<option>Spring</option>
+					<option>Summer</option>
+					<option>Fall</option>
+				</select>
+       </div>
+				<label class="flex1" for="fname">First name: </label>
+        <input type="text" id="fname" name="firstname"  class = "textbox">
+        <label  class="flex1" for="lname">Last name:</label>
+       <input type="text" id="lname" name="lastname"  class = "textbox">
+			 <label   class="flex1" for="pnumber">Phone Number </label>
+			 <input type="number" id="Phone" name="phone Number" placeholder="123-456-7890"  class = "textbox">
+		 <label   class="flex1" 	for  = "email">Email Address</label>
+		 <input type = "email" name = "Email Address" id = "email" size = "40" placeholder = "name@example.com"  class = "textbox">
+			</fieldset>
+			<input type = "submit" value = "Send Review" class = "textbox">
+			<input type = "reset" value = "Cancel" class = "textbox">
+					</div>
+					<hr>
+					<img src="L5img\outdooradventurehorizontal.png" class="imgs">
+					</body>
+					</html>

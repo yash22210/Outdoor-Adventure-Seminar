@@ -1,0 +1,22 @@
+.caption{
+  text-align: center;
+  background-color:#E9EFFF;
+
+}
+.btn{
+  display: inline;
+  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: #A8AABC;
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  padding-top: 5px;
+  height: 90px;
+}
+.navbar{
+  height: 60px;
+  padding-left: 60px;
+}
